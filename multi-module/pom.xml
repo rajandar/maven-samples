@@ -214,6 +214,19 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+         <distributionManagement>
+      <repository>
+	  
+            <id>mavan-releases</id>
+            <name>Internal Releases</name>
+            <url>http://127.0.0.1:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>mavan-snapshot</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://127.0.0.1:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>  
+    </distributionManagement>
 
   <scm>
     <connection>scm:git:git@github.com:gabrielf/maven-samples.git</connection>
