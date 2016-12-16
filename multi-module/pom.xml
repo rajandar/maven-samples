@@ -21,13 +21,7 @@
     <module>webapp</module>
   </modules>
 
-  <distributionManagement>
-    <site>
-      <id>site-server</id>
-      <name>Test Project Site</name>
-      <url>file:///tmp/multi-module-site</url>
-    </site>
-  </distributionManagement>
+ 
 
   <build>
     <plugins>
@@ -224,18 +218,22 @@
   <prerequisites>
     <maven>3.0.3</maven>
   </prerequisites>
-	<distributionManagement>
-      <repository>
-	  
+<distributionManagement>	
+    <site>
+      <id>site-server</id>
+      <name>Test Project Site</name>
+      <url>file:///tmp/multi-module-site</url>
+    </site>		
+    <repository>	  
             <id>mavan-releases</id>
             <name>Internal Releases</name>
             <url>http://127.0.0.1:8081/repository/maven-releases/</url>
-        </repository>
-        <snapshotRepository>
+    </repository>
+    <snapshotRepository>
             <id>mavan-snapshot</id>
             <name>Internal Snapshot Releases</name>
             <url>http://127.0.0.1:8081/repository/maven-snapshots/</url>
-        </snapshotRepository>  
-    </distributionManagement>
+    </snapshotRepository>  
+ </distributionManagement>
 
 </project>
